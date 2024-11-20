@@ -2,14 +2,14 @@ type User = {
     name: string;
     age: number;
     occupation: string;
-    type: 'user';  // Dodano pole type z wartością 'user'
+    type: 'user';
 }
 
 type Admin = {
     name: string;
     age: number;
     role: string;
-    type: 'admin';  // Dodano pole type z wartością 'admin'
+    type: 'admin';
 }
 
 export type Person = User | Admin;

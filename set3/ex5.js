@@ -4,7 +4,7 @@ function createGenerator(n) {
         next: function() {
             return {
                 value: _state,
-                done: _state++ >= n
+                done: _state++ > n
             };
         }
     };
@@ -17,7 +17,7 @@ var foo = {
     }
 };
 
-foo.n = 20;
+foo.n = 5;
 for (var f of foo) {
     console.log(f);
 }
